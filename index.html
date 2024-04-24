@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script></script>
+  </head>
+  <body>
+    <div id="matchEnd"></div>
+    <div id="winner">
+      <div>Your Turn o</div>
+    </div>
+
+    <div id="container">
+      <div>
+        <button id="1" class="btn" onclick="clickme(event)"></button
+        ><button id="2" class="btn" onclick="clickme(event)"></button
+        ><button id="3" class="btn" onclick="clickme(event)"></button
+        ><button id="4" class="btn" onclick="clickme(event)"></button
+        ><button id="5" class="btn" onclick="clickme(event)"></button
+        ><button id="6" class="btn" onclick="clickme(event)"></button
+        ><button id="7" class="btn" onclick="clickme(event)"></button
+        ><button id="8" class="btn" onclick="clickme(event)"></button
+        ><button id="9" class="btn" onclick="clickme(event)"></button>
+      </div>
+    </div>
+    </div>
+      <div class="choice">
+        WHO IS GOING TO BE FIRST :-
+        <select name="" id="whoIsFirst" onchange="setWhoIsFirst(event)">
+          <option value="o">o</option>
+          <option value="x">x</option>
+        </select>
+      </div>
+      
+    </div>
+    <div class="contain">
+      <button id="restart" onclick="restartAll()">RESTART</button>
+    </div>
+    <div class="undo-container">
+      <button class="undo" onclick="undoOneStep()">UNDO</button>
+      <button class="redo" onclick="redoOneStep()">REDO</button>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
